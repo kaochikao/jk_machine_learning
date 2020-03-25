@@ -1,0 +1,8 @@
+FROM ubuntu:18.04
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends python3-dev
+
+COPY train.py /opt/ml/code/train.py
+
+ENTRYPOINT ["python3", "/opt/ml/code/train.py"]
