@@ -1,0 +1,2 @@
+- synthetic time series
+- familarity with ML toolkit: numpy, matplotlib
